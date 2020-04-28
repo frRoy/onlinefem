@@ -1,0 +1,3 @@
+[submodule "cad"]
+	path = cad
+	url = https://frnsroy@bitbucket.org/frnsroy/cad.git
