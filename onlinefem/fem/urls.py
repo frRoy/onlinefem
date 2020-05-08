@@ -1,6 +1,10 @@
 from django.urls import path
-from . import views
 
+from onlinefem.fem.views import (
+    dolfin_view,
+)
+
+app_name = "fem"
 urlpatterns = [
-    path('api/lead/', views.LeadListCreate.as_view()),
+    path("", view=dolfin_view, name="dolfin"),
 ]
