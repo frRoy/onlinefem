@@ -27,4 +27,5 @@ jobs:
       after_failure:
         - docker-compose -f local.yml logs
       after_success:
-        - codecov
+        - docker-compose -f local.yml exec django pip3 install codecov
+        - docker-compose -f local.yml exec django codecov
